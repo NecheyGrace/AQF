@@ -1,10 +1,12 @@
-
+import august from '../assets/august.jpg'
 
 function Commitment() {
   return (
     <div className='flex flex-row h-[100vh] family-'>
-       <div className="w-[40%] bg-amber-500 rounded-2xl">mum</div>
-      <div className="w-[60%]  pt-28 px-16 rounded-2xl font-sans">
+       <div className="w-[40%] bg-black rounded-4xl">
+        <img src={august} alt="" />
+       </div>
+      <div className="w-[60%]  pt-44 px-16 rounded-2xl font-sans">
       <div className="flex  justify-center flex-col">
         <h3 className="text-3xl font-bold pb-6">
          Our Commitment

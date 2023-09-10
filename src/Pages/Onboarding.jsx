@@ -1,11 +1,14 @@
 import heart from '../assets/heart.png'
 import door from '../assets/door.png'
 import chat from '../assets/chat.png'
+import production from '../assets/production.mp4'
 
 function Onboarding() {
   return (
     <div className='flex flex-row h-[100vh] family-sans'>
-       <div className="w-[40%] bg-amber-500 rounded-2xl">mum</div>
+       <div className="w-[40%] bg-amber-500 rounded-2xl">
+       <video src={production} className='w-full h-[100vh] object-cover ' controls />
+       </div>
       <div className="w-[60%]  pt-28 px-16 rounded-2xl">
       <div className="flex  justify-center flex-col">
         <h3 className="text-5xl ">

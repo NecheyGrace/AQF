@@ -1,8 +1,11 @@
-
+import ekaterina from '../assets/ekaterina.jpg'
 
 function Detail() {
   return (
     <div className='flex flex-col h-[100vh] w-[100%] family-sans bg-orange-400'>
+      <div className='h-[30%] w-full'>
+        <img src={ekaterina} className='w-full h-full object-cover' alt="" />
+      </div>
           <div className=" pt-28 px-16 rounded-2xl flex flex-col  items-center">
               <h3 className="font-bold text-4xl" >A few more details</h3>
               <div>

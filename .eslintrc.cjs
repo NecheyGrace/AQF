@@ -18,3 +18,8 @@ module.exports = {
     ],
   },
 }
+{
+  "singleQuote: true,
+  "semi": true
+  // Add other Prettier configuration options as needed
+}
