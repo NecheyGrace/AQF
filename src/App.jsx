@@ -9,6 +9,9 @@ import Topic from './Pages/Topic'
  import Detail from './Pages/Detail'
  import Intro from './Pages/Intro'
  import Role from "./Pages/Role";
+import Challenge from './Pages/Challenge';
+import Area from './Pages/Area';
+import Final from './Pages/Final';
 
 
 function App() {
@@ -24,6 +27,11 @@ function App() {
          <Route path="/role" element={<Role/>} />
          <Route path="/experience" element={<Experience/>} />
          <Route path="/topic" element={<Topic/>} />
+         <Route path="/challenge" element={<Challenge/>} />
+         <Route path="/area" element={<Area/>} />
+         <Route path="/final" element={<Final/>} />
+
+
 
          </Route>
     ) );

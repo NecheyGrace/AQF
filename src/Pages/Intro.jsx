@@ -20,8 +20,8 @@ function Onboarding() {
     </div>
     <Link to="/onboarding">
       <div className="flex flex-wrap pt-12 pb-6 ">
-    <a className="relative" href="#">
-        <span className="absolute top-0 left-0 mt-1 ml-1  w-48 h-12 rounded bg-black"></span>
+    <a className="relative" >
+        <span className="absolute top-0 left-0 mt-1 ml-1  w-48 h-12 rounded-lg bg-black"></span>
         <span className="flex justify-center items-center fold-bold relative  w-48 h-12 rounded-lg border-2 border-black bg-orange-700 px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 dark:bg-transparent">Get Started</span>
     </a>
       </div>

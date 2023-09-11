@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link } from "react-router-dom";
 
-function Topic() {
+function Challenge() {
   return (
     <div className='bg-amber-200 h-[100%] flex flex-col justify-center items-center'>
         <div className='py-16'>
@@ -53,7 +53,7 @@ function Topic() {
         <div>
     <p className='underline text-lg'>Skip</p>
   </div>
-  <Link to='/challenge'>
+  <Link to='/area'>
 
 <div className="flex flex-wrap justify-end pt-4 mb-3 mr-3 ">
 <a className="relative" href="#">
@@ -67,4 +67,4 @@ function Topic() {
   )
 }
 
-export default Topic
+export default Challenge

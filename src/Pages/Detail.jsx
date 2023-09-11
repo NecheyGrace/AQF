@@ -37,9 +37,9 @@ function Detail() {
                 <div className="flex flex-row justify-center items-center py-4">
                     <p className='text-3xl'>pronoun</p>
                     <div>
-                        <button className="w-40 h-16 bg-white rounded-full border-2 border-black" type="button">HE/HIM</button>
-                        <button className="w-40 h-16 bg-white rounded-full border-2 border-black" type="button">SHE/HER</button>
-                        <button className="w-40 h-16 bg-white rounded-full border-2 border-black" type="button">THEY/THEM</button>
+                        <button className="w-40 h-10 bg-white rounded-full border-2 border-black" type="button">HE/HIM</button>
+                        <button className="w-40 h-10 bg-white rounded-full border-2 border-black" type="button">SHE/HER</button>
+                        <button className="w-40 h-10 bg-white rounded-full border-2 border-black" type="button">THEY/THEM</button>
                     </div>
               
                 </div>
@@ -47,9 +47,9 @@ function Detail() {
                 <div className="flex flex-row justify-center items-center py-4">
                     <p className='text-3xl'>Relationship status</p>
                     <div>
-                        <button className="w-40 h-16 bg-white rounded-full border-2 border-black hover:bg-amber-600 hover:border-2 hover:border-yellow-900" type="button">Single</button>
-                        <button className="w-40 h-16 bg-white rounded-full border-2 border-black hover:bg-amber-600 hover:border-2 hover:border-yellow-900" type="button">in a relationship</button>
-                        <button className="w-40 h-16 bg-white rounded-full border-2 border-black hover:bg-amber-600 hover:border-2 hover:border-yellow-900" type="button">other</button>
+                        <button className="w-40 h-10 bg-white rounded-full border-2 border-black hover:bg-amber-600 hover:border-2 hover:border-yellow-900" type="button">Single</button>
+                        <button className="w-40 h-10 bg-white rounded-full border-2 border-black hover:bg-amber-600 hover:border-2 hover:border-yellow-900" type="button">in a relationship</button>
+                        <button className="w-40 h-10 bg-white rounded-full border-2 border-black hover:bg-amber-600 hover:border-2 hover:border-yellow-900" type="button">other</button>
                     </div>
               
                 </div>
