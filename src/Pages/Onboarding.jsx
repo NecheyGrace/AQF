@@ -7,7 +7,7 @@ import {Link } from "react-router-dom";
 function Onboarding() {
   return (
     <div className='flex flex-row h-[100vh] family-sans'>
-       <div className="w-[40%] bg-amber-500 rounded-2xl">
+       <div className="w-[40%] bg-black rounded-2xl">
        <video src={production} className='w-full h-[100vh] object-cover ' controls />
        </div>
       <div className="w-[60%]  pt-28 px-16 rounded-2xl">

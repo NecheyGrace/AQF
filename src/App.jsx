@@ -12,6 +12,7 @@ import Topic from './Pages/Topic'
 import Challenge from './Pages/Challenge';
 import Area from './Pages/Area';
 import Final from './Pages/Final';
+import Finish from './Pages/Finish';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
          <Route path="/challenge" element={<Challenge/>} />
          <Route path="/area" element={<Area/>} />
          <Route path="/final" element={<Final/>} />
+         <Route path="/finish" element={<Finish/>} />
 
 
 

@@ -53,7 +53,7 @@ function Final() {
     <div>
 <p className='underline text-lg'>Skip</p>
 </div>
-<Link to='/'>
+<Link to='/finish'>
 
 <div className="flex flex-wrap justify-end pt-4 mb-3 mr-3 ">
 <a className="relative" href="#">

@@ -53,7 +53,7 @@ function Area() {
     <div>
 <p className='underline text-lg'>Skip</p>
 </div>
-<Link to='/'>
+<Link to='/final'>
 
 <div className="flex flex-wrap justify-end pt-4 mb-3 mr-3 ">
 <a className="relative" href="#">
