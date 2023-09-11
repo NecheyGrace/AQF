@@ -1,12 +1,13 @@
 import ekaterina from '../assets/ekaterina.jpg'
+import {Link } from "react-router-dom";
 
 function Detail() {
   return (
-    <div className='flex flex-col h-[100vh] w-[100%] family-sans bg-orange-400'>
-      <div className='h-[30%] w-full'>
+    <div className='flex flex-col h-[100vh] w-[100%] family-sans bg-amber-200 '>
+      <div className='h-[40%] w-full'>
         <img src={ekaterina} className='w-full h-full object-cover' alt="" />
       </div>
-          <div className=" pt-28 px-16 rounded-2xl flex flex-col  items-center">
+          <div className=" h-[60%] pt-12 px-16 rounded-2xl flex flex-col  items-center">
               <h3 className="font-bold text-4xl" >A few more details</h3>
               <div>
                 <div className="flex flex-row justify-center items-center py=4">
@@ -54,6 +55,16 @@ function Detail() {
                 </div>
               </div>
               </div>
+              <Link to='/role'>
+
+              <div className="flex flex-wrap justify-end pt-4 mb-3 mr-3 ">
+    <a className="relative" href="#">
+        <span className="absolute top-0 left-0 mt-1 ml-1  w-52 h-12 rounded bg-black"></span>
+        <span className="flex justify-center items-center fold-bold relative  w-52 h-12 rounded border-2 border-black bg-orange-700 px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 dark:bg-transparent">Next</span>
+    </a>
+      </div>
+      </Link>
+              
               </div>
               
   )

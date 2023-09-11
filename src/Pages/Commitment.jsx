@@ -1,4 +1,5 @@
 import august from '../assets/august.jpg'
+import {Link } from "react-router-dom";
 
 function Commitment() {
   return (
@@ -33,12 +34,14 @@ function Commitment() {
          </div>
         
       </div>
+      <Link to="/name">
       <div className="flex flex-wrap justify-end pt-14 ">
     <a className="relative" href="#">
         <span className="absolute top-0 left-0 mt-1 ml-1  w-48 h-16 rounded bg-black"></span>
         <span className="flex justify-center items-center fold-bold relative  w-48 h-16 rounded border-2 border-black bg-orange-700 px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 dark:bg-transparent">Next</span>
     </a>
       </div>
+      </Link>
 
       </div>
      

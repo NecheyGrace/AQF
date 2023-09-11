@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link } from "react-router-dom";
 
 function Topic() {
   return (
@@ -52,12 +53,15 @@ function Topic() {
         <div>
     <p className='underline text-lg'>Skip</p>
   </div>
-        <div className="flex flex-wrap justify-end pt-4 mb-3 mr-3 ">
-     <a className="relative" href="#">
-    <span className="absolute top-0 left-0 mt-1 ml-1  w-52 h-12 rounded bg-black"></span>
-    <span className="flex justify-center items-center fold-bold relative  w-52 h-12 rounded border-2 border-black bg-orange-700 px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 dark:bg-transparent">Next</span>
-    </a>
-  </div>
+  <Link to='/'>
+
+<div className="flex flex-wrap justify-end pt-4 mb-3 mr-3 ">
+<a className="relative" href="#">
+<span className="absolute top-0 left-0 mt-1 ml-1  w-52 h-12 rounded bg-black"></span>
+<span className="flex justify-center items-center fold-bold relative  w-52 h-12 rounded border-2 border-black bg-orange-700 px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 dark:bg-transparent">Next</span>
+</a>
+</div>
+</Link>
         </div>
     </div>
   )
