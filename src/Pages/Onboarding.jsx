@@ -1,61 +1,74 @@
 import heart from '../assets/heart.png'
 import door from '../assets/door.png'
-import chat from '../assets/chat.png'
-import production from '../assets/production.mp4'
+import message from '../assets/message.png'
+import cotton from '../assets/cotton.png'
 import {Link } from "react-router-dom";
+import White from './components/White';
+
+import RetroRoundedCorner from './components/RetroRoundedCorner'
 
 function Onboarding() {
+  
   return (
-    <div className='flex flex-row h-[100vh] family-sans'>
-       <div className="w-[40%] bg-black rounded-2xl">
-       <video src={production} className='w-full h-[100vh] object-cover ' controls />
+    <>
+    <style> {`
+  .frame_104 {
+gap: 20px;
+}
+
+.vector {
+fill: #484848;
+}
+
+.vector {
+fill: #484848;
+}
+
+.vector {
+fill: #484848;
+}`}
+</style>
+   
+
+    <div className='flex flex-row h-[952px] family-sans bg-black'>
+      <White  />
+       <div className="w-[40%] h-[952px]  rounded-2xl">
+       <img src={cotton} className='w-full h-[952px] rounded-r-3xl  object-cover '  />
        </div>
-      <div className="w-[60%]  pt-28 px-16 rounded-2xl">
-      <div className="flex  justify-center flex-col">
-        <h3 className="text-5xl ">
-          At AQF, we wholeheartedly believe in the power of conversation
-
-        </h3>
-        <p className="text-4xl font-semibold pt-12 pb-2">We champion every dialogue:</p>
-
-    </div>
-      <div className="py-2 text-4xl">
-
-         <div className='flex flex-row items-center'> 
-          <img 
-          src={heart} 
-          alt="" 
-          className='h-8 w-8 flex items-center'/>
-          <p>a heart-to-heart with yourself </p>
+       <div className="flex flex-col flex-shrink-0 justify-center items-start w-[878px] h-[952px] rounded-tl-3xl rounded-bl-3xl bg-[#ffedcc]">
+  <div className="flex flex-col items-start gap-10 py-0 px-20">
+    <div className="Pro'] w-[609px] text-black font-['Readex text-[2.6875rem] font-light leading-[normal]">At AQF, we wholeheartedly believe in the power of conversation. </div>
+    <div className="flex flex-col items-start gap-2">
+      <div className="flex items-start gap-2.5 Pro'] w-[609px] text-black font-['Readex text-[2.1875rem] leading-[normal]">
+        We champion every dialogue:
+      </div>
+      <div className="flex items-center gap-2.5">
+        <div className="frame_104 flex flex-col items-start">
+          <div className="w-6 h-6">
+            <img className='py-3' src={heart} alt="" />
+            <p></p>
           </div>
-          <div className='flex flex-row'> 
-          <img 
-          src={chat} 
-          alt="" 
-          className='h-8 w-8 flex  items-center'/> <p>a comforting chart with a friend, or </p></div>
-           <div className='flex flex-row'> 
-          <img 
-          src={door} 
-          alt="" 
-          className='h-8 w-8 flex  items-center'/>
-         
-         <p>opening up to someone new </p>
-         </div>
-        
+          <div className="w-6 h-6">
+          <img className='py-3' src={message} alt="" />
+          </div>
+          <div className="w-6 h-6">
+          <img className='py-3' src={door} alt="" />
+          </div>
+        </div>
+        <div className="Pro'] w-[609px] text-black font-['Readex text-[1.75rem] font-light leading-[normal]">a heart-to-heart with yourself,<br /> a comforting chat with a friend, <br /> or opening up to someone new.</div>
       </div>
-      <Link to="/commitment">
-      <div className="flex flex-wrap justify-end pt-10 ">
-    <a className="relative" href="#">
-        <span className="absolute top-0 left-0 mt-1 ml-1  w-48 h-16 rounded bg-black"></span>
-        <span className="flex justify-center items-center fold-bold relative  w-48 h-16 rounded border-2 border-black bg-orange-700 px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 dark:bg-transparent">Next</span>
-    </a>
-      </div>
-      </Link>
+    </div>
+    <div className='flex flex-col justify-end'>
+<Link to="/commitment">
+<RetroRoundedCorner name={'Next'} />
+</Link>
+</div>
+  </div>
+</div>
 
-      </div>
-     
      
     </div>
+    </>
   )
 }
 

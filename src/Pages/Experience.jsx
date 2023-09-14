@@ -1,10 +1,12 @@
 import {Link } from "react-router-dom";
+import Icon from '../Pages/components/Icon'
 
 
 function Experience() {
   return (
-    <div  className="h-[100vh] font-sans">
-        <div className="flex justify-center items-center h-[100vh]">
+    <div  className="h-[952px] font-sans bg-[#FFEDCC]">
+        <Icon  />
+        <div className="flex justify-center items-center h-[952px]">
             <div>
             <h3 className="text-5xl font-bold  pb-5">Now, let us dive into your experiences</h3>
             <p className="text-4xl font-medium">We are will use your answers to provide curated guidance and <br /> thoughtful prompts to kickstart your experience </p>

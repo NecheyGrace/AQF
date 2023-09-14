@@ -1,27 +1,35 @@
-import couple from '../assets/couple.mp4'
+import bro from '../assets/bro.png'
 import {Link } from "react-router-dom";
+import White from '../Pages/components/White'
+import RetroRoundedCorner from './components/RetroRoundedCorner';
 
 function Role() {
   return (
-    <div className='flex flex-col h-[100vh] family-sans '>
-    <div className="h-[100vh] w-full bg-black rounded-2xl">
-       <video src={couple} className='w-full h-[90vh] object-cover ' controls />
+    <>
+     <style> {`
+ .frame_129 {
+  gap: 11px;
+}`}
+</style>
+    <div className='flex flex-col h-[1024px] family-sans '>
+    <White  />
+    <div className="h-[538px] w-full bg-black rounded-2xl">
+       <img src={bro} className='w-full h-[full] object-cover '  />
        </div>
-    <div className="w-[100%] h-[]  px-16 rounded-2xl flex flex-col py-12 items-center">
-        <h3 className="font-bold text-4xl pb-4" >There are two roles to play: Storyteller and Listener  </h3>
-        <p className='text-xl font-medium py-2'>Storytellers record their triumphs, challenges they have learned from, and challenges they are still working through.</p>
-        <p className='text-xl font-medium py-2'>Listeners are folks looking to understand through others, and lend a positive perspective whenever possible. </p>
-    </div>
-    <Link to='/experience'>
-
-<div className="flex flex-wrap justify-end pt-4 mb-3 mr-3 ">
-<a className="relative" href="#">
-<span className="absolute top-0 left-0 mt-1 ml-1  w-52 h-12 rounded bg-black"></span>
-<span className="flex justify-center items-center fold-bold relative  w-52 h-12 rounded border-2 border-black bg-orange-700 px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 dark:bg-transparent">Next</span>
-</a>
+       <div className="frame_129 inline-flex flex-col items-center bg-[#FFEDCC] h-[952px]">
+  <div className="Pro'] text-black font-['Readex text-[2.1875rem] font-bold leading-[normal]">There are two roles to play: storyteller and listener</div>
+  <div className="flex flex-col items-start gap-2 text-center">
+    <div className="Pro'] w-[1223px] text-black font-['Readex text-[1.375rem] leading-[normal]">Storytellers record their triumphs, challenges they’ve learned from, and challenges they’re still working through.</div>
+    <div className="Pro'] w-[1200px] text-black font-['Readex text-[1.375rem] leading-[normal]">Listeners are folks looking to understand through others, and lend a positive perspective whenever possible.</div>
+  </div>
+  <Link to='/experience'>
+<div className='flex justify-end'>
+<RetroRoundedCorner name={'Next'} />
 </div>
 </Link>
 </div>
+</div>
+</>
   )
 }
 

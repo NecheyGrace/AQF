@@ -13,6 +13,7 @@ import Challenge from './Pages/Challenge';
 import Area from './Pages/Area';
 import Final from './Pages/Final';
 import Finish from './Pages/Finish';
+import Login from './Pages/Login';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(<Route>
   <Route index element={<Intro/>}/> 
+         <Route path="/login" element={<Login/>} />
          <Route path="/onboarding" element={<Onboarding/>} />
          <Route path="/commitment" element={<Commitment/>} />
          <Route path="/name" element={<Name/>} />

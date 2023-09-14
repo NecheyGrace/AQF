@@ -1,13 +1,16 @@
-import august from '../assets/august.jpg'
+import august from '../assets/august.png'
 import {Link } from "react-router-dom";
+
+import White from './components/White'
 
 function Commitment() {
   return (
-    <div className='flex flex-row h-[100vh] family-'>
-       <div className="w-[40%] bg-black rounded-4xl">
-        <img src={august} alt="" />
+    <div className='flex flex-row h-[952px] bg-black family-'>
+       <White />
+       <div className="w-[40%] rounded-4xl">
+        <img src={august} alt="" className='object-cover'/>
        </div>
-      <div className="w-[60%]  pt-44 px-16 rounded-2xl font-sans">
+      <div className="w-[60%] h-[952px]  pt-72 px-16 rounded-2xl bg-[#FFEDCC] font-sans ">
       <div className="flex  justify-center flex-col">
         <h3 className="text-3xl font-bold pb-6">
          Our Commitment
@@ -35,10 +38,10 @@ function Commitment() {
         
       </div>
       <Link to="/name">
-      <div className="flex flex-wrap justify-end pt-14 ">
+      <div className="flex flex-wrap justify-end pt-36 ">
     <a className="relative" href="#">
         <span className="absolute top-0 left-0 mt-1 ml-1  w-48 h-16 rounded bg-black"></span>
-        <span className="flex justify-center items-center fold-bold relative  w-48 h-16 rounded border-2 border-black bg-orange-700 px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 dark:bg-transparent">Next</span>
+        <span className="flex justify-center items-center fold-bold relative  w-48 h-16 rounded border-2 border-black bg-[#FF3C00] px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 dark:bg-transparent">Next</span>
     </a>
       </div>
       </Link>

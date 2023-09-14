@@ -1,4 +1,193 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.status_default {
+  box-shadow: 5px 5px 0px 0px #551400;
+}
+
+.button {
+  flex: 1 0 0;
+}
+
+.already_an_aqf_member__sign_in {
+  text-decoration-line: none;
+}
+.frame_101 {
+  gap: 60px;
+}
+
+.retro_rounded_corner_button_dark_mode {
+  box-shadow: 5px 5px 0px 0px #551400;
+}
+
+.button {
+  flex: 1 0 0;
+}
+
+.already_an_aqf_member__sign_in {
+  text-decoration-line: underline;
+}
+.frame_237 {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.80);
+}
+
+.frame_234 {
+  gap: 23px;
+}
+
+.retro_rounded_corner_button_dark_mode {
+  box-shadow: 5px 5px 0px 0px #551400;
+}
+
+.button {
+  flex: 1 0 0;
+}
+
+.forgot_your_password_ {
+  text-decoration-line: underline;
+}
+
+.frame_112 {
+  gap: 26px;
+}
+
+.vector {
+  fill: #000;
+}
+
+.vector {
+  fill: #000;
+}
+
+.frame_111 {
+  gap: 33px;
+}
+
+.vector {
+  fill: #333;
+}
+/* .landing-page {
+    background-color: #000000;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    width: 1440px;
+  }
   
+  .landing-page .pexels-cottonbro {
+    height: 951px;
+    left: 0;
+    position: absolute;
+    top: 73px;
+    width: 559px;
+  }
+  
+  .landing-page .frame {
+    align-items: flex-start;
+    background-color:#FFEDCC ;
+    border-radius: 24px 0px 0px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    height: 952px;
+    justify-content: center;
+    left: 562px;
+    padding: 0px 80px;
+    position: absolute;
+    top: 73px;
+    width: 878px;
+  }
+  
+  .landing-page .frame-2 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .landing-page .div-wrapper {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+  }
+  
+  .landing-page .p {
+    color: #000000;
+    font-family: var(--display-light-font-family);
+    font-size: var(--display-light-font-size);
+    font-style: var(--display-light-font-style);
+    font-weight: var(--display-light-font-weight);
+    letter-spacing: var(--display-light-letter-spacing);
+    line-height: var(--display-light-line-height);
+    margin-top: -1px;
+    position: relative;
+    width: 609px;
+  }
+  
+  .landing-page .text-wrapper-4 {
+    color: #000000;
+    font-family: var(--display-bold-font-family);
+    font-size: var(--display-bold-font-size);
+    font-style: var(--display-bold-font-style);
+    font-weight: var(--display-bold-font-weight);
+    letter-spacing: var(--display-bold-letter-spacing);
+    line-height: var(--display-bold-line-height);
+    position: relative;
+    width: 609px;
+  }
+  
+  .landing-page .retro-rounded-corner-button-dark-mode {
+    flex: 0 0 auto !important;
+    margin-left: -1px !important;
+    margin-top: -1px !important;
+  }
+  
+  .landing-page .retro-rounded-corner-instance {
+    font-family: var(--body-bold-font-family) !important;
+    font-size: var(--body-bold-font-size) !important;
+    font-style: var(--body-bold-font-style) !important;
+    font-weight: var(--body-bold-font-weight) !important;
+    letter-spacing: var(--body-bold-letter-spacing) !important;
+    line-height: var(--body-bold-line-height) !important;
+  }
+
+
+    .landing-page .already-an-AQF {
+      color: #000000;
+      font-family: "Readex Pro-Regular", Helvetica;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: normal;
+      position: relative;
+      text-align: center;
+      width: fit-content;
+    }
+    
+    .landing-page .text-wrapper-5 {
+      color: #000000;
+      font-family: var(--body-regular-font-family);
+      font-size: var(--body-regular-font-size);
+      font-style: var(--body-regular-font-style);
+      font-weight: var(--body-regular-font-weight);
+      letter-spacing: var(--body-regular-letter-spacing);
+      line-height: var(--body-regular-line-height);
+    }
+    
+    .landing-page .text-wrapper-6 {
+      text-decoration: underline;
+    }
+    
+    .landing-page .browser-bars-CC-by-4-0-dennis-schmidt {
+      left: 0 !important;
+      position: absolute !important;
+      top: 0 !important;
+    }
+     */
