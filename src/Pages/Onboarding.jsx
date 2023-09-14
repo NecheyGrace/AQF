@@ -65,7 +65,7 @@ fill: #484848;
   </div>
 
   <div className='bg-[#FFEDCC] justify-end h-64 w-full flex items-end pr-8 flex-col'>
-      <Link to='/email'>
+      <Link to='/name'>
       <RetroRoundedCorner name={'Next'} />
       </Link></div>
 </div>

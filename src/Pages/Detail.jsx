@@ -66,7 +66,7 @@ function Detail() {
   </div>
 </div>
  <div className='bg-[#FFEDCC] w-full flex items-end  p-8 flex-col'>
-      <Link to='/email'>
+      <Link to='/role'>
       <RetroRoundedCorner name={'Next'} />
       </Link></div>
 </div> 
