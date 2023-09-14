@@ -1,5 +1,6 @@
 import august from '../assets/august.png'
 import {Link } from "react-router-dom";
+import RetroRoundedCorner from './components/RetroRoundedCorner';
 
 import White from './components/White'
 
@@ -37,14 +38,10 @@ function Commitment() {
          </div>
         
       </div>
-      <Link to="/name">
-      <div className="flex flex-wrap justify-end pt-36 ">
-    <a className="relative" href="#">
-        <span className="absolute top-0 left-0 mt-1 ml-1  w-48 h-16 rounded bg-black"></span>
-        <span className="flex justify-center items-center fold-bold relative  w-48 h-16 rounded border-2 border-black bg-[#FF3C00] px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 dark:bg-transparent">Next</span>
-    </a>
-      </div>
-      </Link>
+      <div className='bg-[#FFEDCC] w-full flex items-end pt-44 pl-44 p-8 flex-col'>
+      <Link to='/email'>
+      <RetroRoundedCorner name={'Next'} />
+      </Link></div>
 
       </div>
      

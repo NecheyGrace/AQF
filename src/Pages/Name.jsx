@@ -1,26 +1,27 @@
-import intro from '../assets/intro.jpg'
+import header from '../assets/header.png'
+import RetroRoundedCorner from './components/RetroRoundedCorner';
 import {Link } from "react-router-dom";
 function Name() {
   return (
-    <div className='flex flex-col h-[100vh] family-sans '>
-        <div className="w-[100%] h-[40%] bg-black rounded-2xl">
-          <img src={intro} className='h-[100%] w-full object-cover' alt="" />
-        </div>
-        <div className="w-[100%] h-[70%] pt-28 px-16 rounded-2xl flex flex-col  items-center">
-            <h3 className="font-bold text-4xl" >What is your name ?</h3>
-            <input type="text" className="border-2 border-black w-[70%] h-12 rounded-full my-8 text-center" placeholder="please type in your name"/>
-            <p className="text-lg font-medium">While we encourage real names for storytelling, use whatever name you feel most comfortable with.</p>
-        </div>
-        <Link to='/email'>
-        <div className="flex flex-wrap justify-end pt-4 mb-3 mr-3 ">
-    <a className="relative" href="#">
-        <span className="absolute top-0 left-0 mt-1 ml-1  w-52 h-12 rounded bg-black"></span>
-        <span className="flex justify-center items-center fold-bold relative  w-52 h-12 rounded border-2 border-black bg-orange-700 px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 dark:bg-transparent">Next</span>
-    </a>
+   <div className="h-[100vh] ">
+      <div className="h-[200px] w-full">
+        <img src={header} className="w-full h-full" />
       </div>
-      </Link>
+      <div className="bg-[#FFEDCC] items-center pt-20 flex flex-col h-[60%] ">
+        <h3 className="text-[44px] font-bold">What's your name?</h3>
+        <input className="mt-5 px-4 w-[720px] h-[38px] border border-black rounded-full" />
+        <p className="mt-2 text-sm">
+          While we encourage real names for storytelling, use whatever name you
+          feel most comfortable with.
+        </p>
+      </div>
+       <div className='bg-[#FFEDCC] w-full flex items-end pr-8 pb-8 flex-col'>
+      <Link to='/email'>
+      <RetroRoundedCorner name={'Next'} />
+      </Link></div>
     </div>
   )
 }
 
 export default Name
+
