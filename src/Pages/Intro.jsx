@@ -9,15 +9,15 @@ function Intro() {
 
 <>
 <div className='w-full h-full flex flex-row bg-black'>
-  <div className='w-[559px] height-[952px]'>
-    <img className=' rounded-r-3xl object-cover h-full' src={pexels} alt="" />
+  <div className='w-[50%] height-[952px]'>
+    <img className=' rounded-r-3xl object-cover w-full h-full' src={pexels} alt="" />
   </div>
   <div className="frame_101 flex flex-col ml-1 flex-shrink-0 justify-center items-start py-0 px-20 w-[878px] h-[952px] rounded-tl-3xl rounded-bl-3xl bg-[#ffedcc]">
   <div className="flex flex-col items-start gap-4">
-    <div className="flex flex-col items-center gap-10 Pro'] w-[609px] text-black font-['Readex text-[2.6875rem] font-light leading-[normal]">
+    <div className="flex flex-col items-center gap-10  w-[609px] text-black font-['Readex text-[2.6875rem] font-light leading-[normal]">
       Humans have been telling stories for millennia to better understand the world and cultivate new perspectives on old problems.
     </div>
-    <div className="Pro'] w-[609px] text-black font-['Readex text-[2.6875rem] font-bold leading-[normal]">What’s your story?</div>
+    <div className=" w-[609px] text-black font-['Readex text-[2.6875rem] font-bold leading-[normal]">What’s your story?</div>
   </div>
   <div className="flex flex-col items-start gap-4">
   <Link to='/onboarding'>
