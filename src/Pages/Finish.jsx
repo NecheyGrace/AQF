@@ -6,10 +6,10 @@ import {Link } from "react-router-dom";
 
 function Finish() {
   return (
-    <div className='flex flex-row h-[100vh]'>
+    <div className='flex flex-row h-[952px] bg-black'>
       <White />
-        <div className='w-[ 559px] h-[952px]'>
-            <img src={mikhail} className='w-full h-full object-cover' alt="" />
+        <div className='w-[ 559px] h-[952px] '>
+            <img src={mikhail} className='w-full h-full object-cover rounded-r-3xl' alt="" />
         </div>
         <div className="flex flex-col flex-shrink-0 justify-center items-center gap-10 py-0 px-20 w-[878px] h-[952px] rounded-tl-3xl rounded-bl-3xl bg-[#ffedcc]">
   <div className="Pro'] w-[645px] text-black font-['Readex text-[2.6875rem] font-bold leading-[normal]">Nice work! You’re all set up.</div>
