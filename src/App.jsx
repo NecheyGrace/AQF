@@ -14,6 +14,9 @@ import Area from './Pages/Area';
 import Final from './Pages/Final';
 import Finish from './Pages/Finish';
 import Login from './Pages/Login';
+import Overcoming from './Pages/Overcoming';
+import Facing from './Pages/Facing';
+
 
 
 function App() {
@@ -32,6 +35,8 @@ function App() {
          <Route path="/topic" element={<Topic/>} />
          <Route path="/challenge" element={<Challenge/>} />
          <Route path="/area" element={<Area/>} />
+         <Route path="/overcoming" element={<Overcoming/>} />
+         <Route path="/facing" element={<Facing/>} />
          <Route path="/final" element={<Final/>} />
          <Route path="/finish" element={<Finish/>} />
 

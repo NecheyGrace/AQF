@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import header from '../assets/header.png'
 import RetroRoundedCorner from './components/RetroRoundedCorner';
 import {Link } from "react-router-dom";
+
 function Name() {
+  const [name, setName]  = useState('')
   return (
    <div className="h-[100vh] ">
       <div className="h-[200px] w-full">

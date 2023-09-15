@@ -1,68 +1,53 @@
 import React from 'react'
 import {Link } from "react-router-dom";
+import Icon from '../Pages/components/Icon'
+import RetroRoundedCorner from './components/RetroRoundedCorner';
 
 function Area() {
+   
+   const categories = [
+  'Overcoming Adversity',
+  'Career Transitions',
+  'Financial Hardships',
+  'Health Struggles',
+  'Loss and Grief',
+  'Mental Health Challenges',
+  'Cultural Barriers',
+  'Educational Obstacles',
+  'Personal Relationships',
+  'Work-Life Balance',
+  'Social Isolation',
+  'Discrimination and Prejudice',
+  'Identity Crisis',
+  'Language Barriers',
+  'Addiction and Recovery',
+  'Creative Blocks',
+  'Environmental Challenges',
+  'Parenting Challenges',
+  'Technological Challenges',
+  'Legal Battles',
+];
   return (
-    <div className='bg-amber-200 h-[100%] flex flex-col justify-center items-center'>
-    <div className='py-16'>
-        <h3 className='text-5xl font-bold pb-4'>What topics will you like to learn from and talk about</h3>
-        <p className='text-lg font-medium'>You can change your Selection at any point on your Profile </p>
-    </div>
-    <div>
-        <div className='flex justify-center'>
-            
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold rounded-full'>Personal Growth</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Career Advancement</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Travel Adventures</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Health and fitness Journey</button></div>
-         </div>
-
-         <div className='flex justify-center'>
-            
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Personal Growth</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold rounded-full'>Career Advancement</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Travel Adventures</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Health and fitness Journey</button></div>
-         </div>
-
-         <div className='flex justify-center'>
-            
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Personal Growth</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Career Advancement</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Travel Adventures</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Health and fitness Journey</button></div>
-         </div>
-
-         <div className='flex justify-center'>
-            
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Personal Growth</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Career Advancement</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Travel Adventures</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Health and fitness Journey</button></div>
-         </div>
-
-         <div className='flex justify-center'>
-            
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Personal Growth</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Career Advancement</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Travel Adventures</button></div>
-            <div className='py-2 px-2 '><button className='w-72 h-16 border-2 border-amber-950 text-black text-xl font-bold  rounded-full'>Health and fitness Journey</button></div>
-         </div>
-    </div>
-    <div className='flex flex-row py-8 justify-end items-end'>
-    <div>
-<p className='underline text-lg'>Skip</p>
+   <div className='h-[952px] w-[1440px] bg-[#FFEDCC] flex flex-col justify-center  font-[Readex Pro] pl-[84px] pr-[90px]'>
+   <Icon />
+   <div className='py-12'>
+      <h3 className='text-4xl font-bold'>Are there any challenge areas you don’t want to see?</h3>
+      <p className='py-2 font-semibold'>You can change your selection at any time in your profile.</p>
+   </div>
+   <div className="flex flex-wrap items-start content-start gap-4 w-[1266px]">
+    {categories.map((category, index) => (
+      <button
+        key={index}
+        className="flex justify-center items-center gap-2.5 pt-[0.9375rem] pb-[0.9375rem] pl-[2.1875rem] pr-[2.1875rem] rounded-full border-2 border-[#551400] bg-white/0 Pro'] text-black text-center font-['Readex text-lg font-bold leading-[normal]">
+        {category}
+      </button>
+    ))}
+ <div className='bg-[#FFEDCC] w-full flex justify-end items-center pr-8 pt-32 flex-row space-x-16' >
+   <span className='underline text-2xl '>Skip</span>
+   <Link to='/overcoming'>
+   <RetroRoundedCorner name={'Next'} />
+   </Link></div>
 </div>
-<Link to='/final'>
-
-<div className="flex flex-wrap justify-end pt-4 mb-3 mr-3 ">
-<a className="relative" href="#">
-<span className="absolute top-0 left-0 mt-1 ml-1  w-52 h-12 rounded bg-black"></span>
-<span className="flex justify-center items-center fold-bold relative  w-52 h-12 rounded border-2 border-black bg-orange-700 px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 dark:bg-transparent">Next</span>
-</a>
-</div>
-</Link>
-    </div>
 </div>
   )
 }
