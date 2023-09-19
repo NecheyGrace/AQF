@@ -1,12 +1,23 @@
 import { useState } from "react";
+import White from "./components/White";
 import header from "../assets/header.png";
 import RetroRoundedCorner from "./components/RetroRoundedCorner";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Status from "./components/Status";
+
 function Name() {
   const [name, setName] = useState("");
+
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
   return (
     <div className="h-[952px] w-[1440px]  bg-[#FFEDCC]">
+      <div onClick={goBack}>
+        <White />
+      </div>
       <div className="h-[200px] w-full">
         <img src={header} className="w-full h-full" />
       </div>

@@ -1,12 +1,18 @@
 import React from "react";
 import mikhail from "../assets/mikhail.png";
 import White from "../Pages/components/White";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Finish() {
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
   return (
     <div className="flex flex-row h-[952px] bg-black">
-      <White />
+      <div onClick={goBack}>
+        <White />
+      </div>
       <div className="w-[ 559px] h-[952px] ">
         <img
           src={mikhail}

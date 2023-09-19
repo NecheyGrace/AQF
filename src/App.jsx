@@ -45,7 +45,6 @@ function App() {
         <Route path="/area" element={<Area />} />
         <Route path="/overcoming" element={<Overcoming />} />
         <Route path="/facing" element={<Facing />} />
-        <Route path="/final" element={<Final />} />
         <Route path="/finish" element={<Finish />} />
         <Route path="/audio" element={<Audio />} />
       </Route>
