@@ -20,7 +20,6 @@ import Intro from "./Pages/Intro";
 import Role from "./Pages/Role";
 import Challenge from "./Pages/Challenge";
 import Area from "./Pages/Area";
-import Final from "./Pages/Final";
 import Finish from "./Pages/Finish";
 import Login from "./Pages/Login";
 import Overcoming from "./Pages/Overcoming";
