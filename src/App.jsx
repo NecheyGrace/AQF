@@ -9,24 +9,46 @@ import {
   Link,
   Outlet,
 } from "react-router-dom";
-import Onboarding from "./Pages/Onboarding";
+import Onboarding from "./Pages/Onboard/Onboarding";
 import Commitment from "./Pages/Commitment";
 import Name from "./Pages/Name";
 import Email from "./Pages/Email";
 import Experience from "./Pages/Experience";
 import Topic from "./Pages/Topic";
 import Detail from "./Pages/Detail";
-import Intro from "./Pages/Intro";
+import Intro from "./Pages/Landing/Intro";
 import Role from "./Pages/Role";
 import Challenge from "./Pages/Challenge";
 import Area from "./Pages/Area";
 import Finish from "./Pages/Finish";
-import Login from "./Pages/Login";
+import Login from "./Pages/Landing/Login";
 import Overcoming from "./Pages/Overcoming";
 import Facing from "./Pages/Facing";
 import Audio from "./Pages/Audio";
+import Current from "./Pages/Onboard/Current";
+import MenuClose from "./Pages/components/MenuClose";
+import MenuOpen from "./Pages/components/MenuOpen";
+import Footer from "./Pages/components/Footer";
+import Profile from "./Pages/Profile";
+import StoryLibrary from "./Pages/StoryLibrary";
+import Card from "./Pages/components/Card";
+import Label from "./Pages/Onboard/Struggle/Label";
+import Feel from "./Pages/Onboard/Struggle/Feel";
+import Story from "./Pages/Onboard/Struggle/Story";
+import Prompt from "./Pages/Onboard/Struggle/Prompt";
+import Feeling from "./Pages/Onboard/Challenge/Feeling";
+import Prompts from "./Pages/Onboard/Challenge/Prompts";
+import Right from "./Pages/Onboard/Challenge/Right";
+import Situation from "./Pages/Onboard/Challenge/Situation";
+import Storytelling from "./Pages/Onboard/Challenge/Storytelling";
+import Record from "./Pages/Onboard/Record";
 
 function App() {
+  // return (
+  //   <>
+  //     <Story />
+  //   </>
+  // );
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route>
@@ -34,8 +56,15 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/onboarding" element={<Onboarding />} />
         <Route path="/commitment" element={<Commitment />} />
+        <Route path="/prompt" element={<Prompt />} />
+        <Route path="/record" element={<Record />} />
+        <Route path="/label" element={<Label />} />
+        <Route path="/situation" element={<Situation />} />
+        <Route path="/current" element={<Current />} />
+        <Route path="/feel" element={<Feel />} />
         <Route path="/name" element={<Name />} />
         <Route path="/email" element={<Email />} />
+        <Route path="/story" element={<Story />} />
         <Route path="/detail" element={<Detail />} />
         <Route path="/role" element={<Role />} />
         <Route path="/experience" element={<Experience />} />
@@ -54,20 +83,6 @@ function App() {
       <RouterProvider router={router} />
     </div>
   );
-
-  // return (
-  //   <>
-
-  //  <Router>
-  //      <Routes>
-  //       <Route exact path={'/'} element={<Intro/>}/>
-  //       <Route path="/onboarding" element={<Onboarding/>} />
-  //       <Route path="/email" element={<Email/>} />
-  //       </Routes>
-  //       </Router>
-
-  //   </>
-  // )
 }
 
 export default App;

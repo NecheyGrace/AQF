@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import '../../index.css'
+import "../../index.css";
 
 //  const RetroRoundedCorner = ({ status, className }) => {
 //   return (
@@ -9,13 +9,15 @@ import '../../index.css'
 //     </button>
 //   );
 // };
- const RetroRoundedCorner = ({ name, weight, text }) => (
-  <button className={`${weight} ${text} status_default inline-flex justify-center items-center gap-2.5 pt-[0.9375rem] pb-[0.9375rem] pl-[2.1875rem] pr-[2.1875rem] min-w-[12.5rem] rounded-[0.625rem] border-2 border-black bg-[#ff3c00] button text-black text-center font-['Inter'] text-[1.5625rem] leading-[normal]`}>
+const RetroRoundedCorner = ({ name }) => (
+  <button
+    className={` bg-[#ff3c00] status_default inline-flex font-bold justify-center items-center  h-12 w-36 rounded-[0.625rem] border-2 border-black text-black text-base leading-[normal]`}
+  >
     {name}
   </button>
-  )
+);
 
 RetroRoundedCorner.propTypes = {
   status: PropTypes.oneOf(["disabled", "alt-selected", "alt", "default"]),
 };
-export default RetroRoundedCorner
+export default RetroRoundedCorner;
