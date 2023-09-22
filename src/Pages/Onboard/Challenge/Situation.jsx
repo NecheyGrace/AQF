@@ -94,8 +94,8 @@ function Situation() {
           </div>
         </div>
       </div>
-      <div className=" w-full flex items-end  p-8 flex-col">
-        {/* <Link to={`${selectedCard===1?"/c/s":"/c/ns"}`}> */}
+      {/* <div className=" w-full flex items-end  p-8 flex-col">
+         <Link to={`${selectedCard===1?"/c/s":"/c/ns"}`}> 
         <button
           onClick={handleNextPageClick}
           disabled={!selectedCard}
@@ -105,8 +105,8 @@ function Situation() {
         >
           Next
         </button>
-        {/* </Link> */}
-      </div>
+         </Link> 
+      </div> */}
     </div>
   );
 }

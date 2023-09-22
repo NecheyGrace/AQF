@@ -4,7 +4,7 @@ import MenuClose from "../../components/MenuClose";
 import MenuOpen from "../../components/MenuOpen";
 import Card from "../../components/Card";
 import Rectangle from "../../components/Rectangle";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Story() {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -21,9 +21,13 @@ function Story() {
       alert("Please select a card before proceeding.");
     }
   };
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
   return (
     <div className="bg-[#FFEDCC] w-full ">
-      <div className="pt-6">
+      <div className="pt-6" onClick={goBack}>
         <Icon />
         <div className="flex justify-end">
           <MenuClose />
