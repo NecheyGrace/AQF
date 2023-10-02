@@ -1,6 +1,6 @@
 import React from "react";
 
-function Rectangle({ text }) {
+function Rectangle({ text, prompt }) {
   return (
     <>
       <div className="flex items-center flex-shrink-0 w-[75%] h-32 rounded-tr-3xl rounded-br-3xl bg-[#ffa355] -mt-5 ">
@@ -9,6 +9,7 @@ function Rectangle({ text }) {
      text-4xl font-bold leading-[normal] pl-[107px] "
         >
           {text}
+          <p className="text-sm font-semibold">{prompt}</p>
         </div>
       </div>
     </>

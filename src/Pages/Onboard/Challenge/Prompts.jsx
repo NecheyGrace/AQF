@@ -1,9 +1,12 @@
 import React from "react";
 import Icon from "../../components/Icon";
 import MenuClose from "../../components/MenuClose";
+import bookmark from "../../../assets/bookmark.png";
 import MenuOpen from "../../components/MenuOpen";
 import Card from "../../components/Card";
 import Rectangle from "../../components/Rectangle";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 // Define an array of data objects, one for each instance
 const promptsData = [
@@ -28,10 +31,30 @@ const promptsData = [
 ];
 
 function Prompts() {
+  const [selectedCard, setSelectedCard] = useState(null);
+
+  const handleCardClick = (cardId) => {
+    setSelectedCard(cardId);
+  };
+
+  const handleNextPageClick = () => {
+    if (selectedCard) {
+      // Perform navigation to the next page here
+      // You can use React Router, window.location.href, or any other navigation method
+    } else {
+      alert("Please select a card before proceeding.");
+    }
+  };
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
   return (
     <div className="bg-[#FFEDCC] w-full ">
-      <div className="pt-6">
+      <div className="pt-6" onClick={goBack}>
         <Icon />
+      </div>
+      <div>
         <div className="flex justify-end">
           <MenuClose />
         </div>
@@ -41,7 +64,9 @@ function Prompts() {
         {promptsData.map((data) => (
           <div key={data.id} className="flex-shrink-0 w-[23.3125rem] h-[456px]">
             <div className="frame_193 flex-shrink-0 rounded-lg border-4 border-black bg-white">
-              <div className="Pro text-black font-Readex text-lg font-light leading-normal">
+              <img src={bookmark} alt="" className="absolute" />
+
+              <div className="Pro text-black font-Readex text-lg font-light leading-normal pt-16 ">
                 {data.question}
               </div>
               <div className="flex flex-shrink-0 justify-center items-center w-12 h-12">

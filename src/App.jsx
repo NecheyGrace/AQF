@@ -8,6 +8,7 @@ import {
   createRoutesFromElements,
   Link,
   Outlet,
+  useNavigate,
 } from "react-router-dom";
 import Onboarding from "./Pages/Onboard/Onboarding";
 import Commitment from "./Pages/Commitment";
@@ -42,13 +43,43 @@ import Right from "./Pages/Onboard/Challenge/Right";
 import Situation from "./Pages/Onboard/Challenge/Situation";
 import Storytelling from "./Pages/Onboard/Challenge/Storytelling";
 import Record from "./Pages/Onboard/Record";
+import MobileMessage from "./Pages/MobileMessage";
+import { useState } from "react";
+import { useEffect } from "react";
 
 function App() {
   // return (
   //   <>
-  //     <Story />
+  //     <Audio />
   //   </>
   // );
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenWidth = () => {
+      if (window.innerWidth <= 768) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+
+    window.addEventListener("resize", checkScreenWidth);
+    checkScreenWidth();
+
+    return () => {
+      window.removeEventListener("resize", checkScreenWidth);
+    };
+  }, []);
+  // const navigate = useNavigate();
+  // const goBack = () => {
+  //   navigate(-1);
+  // };
+  // if (isMobile) {
+  //   navigate("/mobile-message");
+  //   return null;
+  // }
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route>
@@ -56,15 +87,20 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/onboarding" element={<Onboarding />} />
         <Route path="/commitment" element={<Commitment />} />
+        <Route path="/mobile-message" element={<MobileMessage />} />
         <Route path="/prompt" element={<Prompt />} />
+        <Route path="/prompts" element={<Prompts />} />
         <Route path="/record" element={<Record />} />
         <Route path="/label" element={<Label />} />
         <Route path="/situation" element={<Situation />} />
         <Route path="/current" element={<Current />} />
         <Route path="/feel" element={<Feel />} />
+        <Route path="/feeling" element={<Feeling />} />
+        <Route path="/right" element={<Right />} />
         <Route path="/name" element={<Name />} />
         <Route path="/email" element={<Email />} />
         <Route path="/story" element={<Story />} />
+        <Route path="/storytelling" element={<Storytelling />} />
         <Route path="/detail" element={<Detail />} />
         <Route path="/role" element={<Role />} />
         <Route path="/experience" element={<Experience />} />

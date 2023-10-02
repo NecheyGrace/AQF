@@ -1,4 +1,5 @@
 import pexels from "../../assets/pexels.png";
+import AQF from "../../assets/AQF.png";
 import { Link } from "react-router-dom";
 import RetroRoundedCorner from "../components/RetroRoundedCorner";
 import "../../index.css";
@@ -14,18 +15,19 @@ function Intro() {
             alt=""
           />
         </div>
-        <div className="frame_101 flex flex-col ml-1 flex-shrink-0 justify-center items-start py-0 px-20 w-[60%]  rounded-tl-3xl rounded-bl-3xl bg-[#ffedcc]">
-          <div className="flex flex-col items-start gap-4">
-            <div className="flex flex-col items-center gap-10  w-[550px] text-black font-['Readex text-[2.4rem] font-normal leading-[normal]">
-              Humans have been telling stories for millennia to better
-              understand the world and cultivate new perspectives on old
-              problems.
+        <div className="frame_101 flex flex-col ml-[2px]  justify-center items-start  px-[80px] w-[60%]  rounded-tl-3xl rounded-bl-3xl bg-[#ffedcc]">
+          <img src={AQF} alt="Logo" className="absolute top-0 pt-[41px]" />
+          <div className="flex flex-col items-start gap-4 ">
+            <div className="flex flex-col items-center gap-10  w-[550px] text-black  text-[1.7rem] font-bold leading-[normal]">
+              This is where challenges are embraced, narratives are spoken, and
+              resilience is born in you.
             </div>
-            <div className=" w-[609px] text-black font-['Readex text-[2.4rem] font-bold leading-[normal]">
-              What’s your story?
+            <div className=" w-[609px] text-black font-['Readex text-[1.7rem] font-normal leading-[normal] pb-8">
+              Discover the transformative power of storytelling to conquer your
+              struggles.
             </div>
           </div>
-          <div className="flex flex-col items-start gap-4">
+          <div className="flex flex-col items-start gap-4 ">
             <Link to="/onboarding">
               <RetroRoundedCorner name={"Get Started"} />
             </Link>

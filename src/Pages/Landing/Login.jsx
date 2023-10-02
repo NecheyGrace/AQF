@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import RetroRoundedCorner from "../components/RetroRoundedCorner";
+import AQF from "../../assets/AQF.png";
+import pexels from "../../assets/pexels.png";
 import { useNavigate } from "react-router-dom";
 import Icon from "../components/Icon";
 import "../../index.css";
@@ -21,28 +23,37 @@ function Login() {
     navigate(-1);
   };
   return (
-    <div className="w-full h-[100vh] bg-[#FFEDCC] flex justify-center items-center">
-      <Icon />
-      <div onClick={goBack}>
-        <Icon />
+    <div className="w-full h-full bg-[#000000] flex justify-center overflow-hidden">
+      <div className="w-[40%]">
+        <img
+          className=" rounded-r-3xl object-cover w-full h-full"
+          src={pexels}
+          alt=""
+        />
+        <div onClick={goBack}>
+          <Icon />
+        </div>
       </div>
 
-      <div className="w-[982px] h-[563px] bg-[#FFD1AA] flex flex-col justify-center items-center rounded-3xl font-[Readex Pro] text-4xl font-light">
-        <h3 className=" w-[609px] text-black font-['Readex text-[2.6875rem] font-bold leading-[normal] text-center">
-          Welcome back
-        </h3>
+      <div className="w-[60%]  ml-[2px] flex flex-col justify-center items-start  rounded-tl-3xl rounded-bl-3xl pl-[100px]  font-light  bg-[#FFEDCC]  ">
+        <div className="pr-[69px]">
+          <img src={AQF} alt="Logo" className="absolute top-0 pt-[41px]" />
+          <h3 className=" w-[609px] text-black font-['Readex text-[1.9rem] font-bold leading-[normal] pt-[131px]">
+            Welcome back, <br /> Storyteller
+          </h3>
 
-        <div className="flex flex-col justify-center items-center mt-5 pb-5">
-          <TextInput text={"Email address"} />
-          <TextInput text={"Password"} />
-        </div>
-        <div className="pt-5 space-y-4 ">
-          <Link to="/login">
-            <RetroRoundedCorner name={"Login"} />
-          </Link>
-          <p className="text-base text-[#000000] underline">
-            Forgot Your password
-          </p>
+          <div className="flex flex-col justify-center items-center mt-5 pb-5">
+            <TextInput text={"Email address"} />
+            <TextInput text={"Password"} />
+          </div>
+          <div className="pt-5 space-y-4 flex flex-col items-center">
+            <Link to="/login">
+              <RetroRoundedCorner name={"Login"} />
+            </Link>
+            <p className="text-base text-[#000000] underline">
+              Forgot Your password
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 function MenuOpen() {
   return (
-    <div className="inline-flex flex-col items-end">
+    <div className="inline-flex flex-col items-end sticky top-0 ">
       <div className="w-[18.75rem] flex justify-between items-center h-[6.5rem] rounded-tl-lg rounded-bl-lg bg-[#ffd380] pr-[12px] pl-[16px]">
         <div className="flex-shrink-0 w-20 h-20">
           <div className="flex justify-center items-center flex-shrink-0 w-20 h-20 rounded-lg bg-[#ffc455]">

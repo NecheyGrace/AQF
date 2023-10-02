@@ -2,7 +2,7 @@ import React from "react";
 
 function MenuClose() {
   return (
-    <div>
+    <div className="">
       <div className="menu_closed flex justify-between items-center pr-[0.3125rem] px-3 w-[130px] h-[80px] rounded-tl-lg rounded-bl-lg bg-[#ffd380]">
         <div className="flex justify-center items-center flex-shrink-0 w-14 h-14 rounded-lg bg-[#ffc455]">
           <svg

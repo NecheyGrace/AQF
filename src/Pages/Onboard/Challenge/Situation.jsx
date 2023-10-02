@@ -2,31 +2,26 @@ import React, { useState } from "react";
 import Icon from "../../components/Icon";
 import MenuClose from "../../components/MenuClose";
 import Rectangle from "../../components/Rectangle";
+import { Link, useNavigate } from "react-router-dom";
 function Situation() {
-  const [selectedCards, setSelectedCards] = useState([]);
+  const [selectedCard, setSelectedCard] = useState(null);
   const [isButtonActive, setIsButtonActive] = useState(false);
 
   const handleCardClick = (index) => {
-    const cardIndex = selectedCards.indexOf(index);
-    if (cardIndex === -1) {
-      setSelectedCards([...selectedCards, index]);
+    if (selectedCard === index) {
+      setSelectedCard(null);
+      setIsButtonActive(false);
     } else {
-      const updatedSelectedCards = [...selectedCards];
-      updatedSelectedCards.splice(cardIndex, 1);
-      setSelectedCards(updatedSelectedCards);
+      setSelectedCard(index);
+      setIsButtonActive(true);
     }
-
-    setIsButtonActive(selectedCards.length >= 4 ? true : false);
-
-    // setIsButtonActive(selectedCards.length + 1 >= 5);
   };
 
   const handleNextPageClick = () => {
-    if (selectedCards.length >= 5) {
-      // Perform navigation to the next page here
-      // You can use React Router, window.location.href, or any other navigation method
+    if (selectedCard !== null) {
+      // Proceed with the selected card
     } else {
-      alert("Please select at least five cards before proceeding.");
+      alert("Please select a challenge before proceeding.");
     }
   };
 
@@ -53,12 +48,18 @@ function Situation() {
     "Technological Challenges",
     "Legal Battles",
   ];
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
 
   return (
     <div>
       <div className="bg-[#FFEDCC] w-full ">
-        <div className="pt-6">
+        <div className="pt-6" onClick={goBack}>
           <Icon />
+        </div>
+        <div>
           <div className="flex justify-end">
             <MenuClose />
           </div>
@@ -70,7 +71,7 @@ function Situation() {
             <button
               key={index}
               className={`flex justify-center items-center gap-2.5 pt-[0.85rem] pb-[0.9375rem] px-[2rem] rounded-full border-2 border-[#551400] ${
-                selectedCards.includes(index) ? "bg-[#ff3c00]" : "bg-white/0"
+                selectedCard === index ? "bg-[#ff3c00]" : "bg-white/0"
               } text-black text-center font-['Readex text-lg font-bold leading-[normal]']`}
               onClick={() => handleCardClick(index)}
             >
@@ -78,19 +79,19 @@ function Situation() {
             </button>
           ))}
           <div className=" w-full flex items-end  p-8 flex-col">
-            {/* <Link to={`${selectedCard===1?"/c/s":"/c/ns"}`}> */}
-            <button
-              onClick={handleNextPageClick}
-              disabled={!isButtonActive}
-              className={`status_default ${
-                isButtonActive
-                  ? "bg-[#ff3c00]"
-                  : "bg-gray-400 cursor-not-allowed"
-              } inline-flex font-bold justify-center items-center  h-12 w-36 rounded-[0.625rem] border-2 border-black   text-black  font-['Inter'] text-md leading-[normal]`}
-            >
-              Next
-            </button>
-            {/* </Link> */}
+            <Link to="/feeling">
+              <button
+                onClick={handleNextPageClick}
+                disabled={!isButtonActive}
+                className={`status_default ${
+                  isButtonActive
+                    ? "bg-[#ff3c00]"
+                    : "bg-gray-400 cursor-not-allowed"
+                } inline-flex font-bold justify-center items-center  h-12 w-36 rounded-[0.625rem] border-2 border-black   text-black  font-['Inter'] text-md leading-[normal]`}
+              >
+                Next
+              </button>
+            </Link>
           </div>
         </div>
       </div>

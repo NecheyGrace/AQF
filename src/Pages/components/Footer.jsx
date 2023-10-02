@@ -24,6 +24,31 @@ function Footer() {
         </div>
       </div>
       <div className="inline-flex flex-col flex-shrink-0 items-start gap-2 w-[8.3125rem] h-11"></div>
+
+      <footer className="absolute w-[1440px] h-[138px] top-[886px] left-0 bg-variable-collection-primary-400">
+        <div className="flex flex-col w-[1440px] h-[138px] items-center justify-center gap-[16px] relative">
+          <div className="relative w-fit [font-family:'Readex_Pro-Bold',Helvetica] font-bold text-black text-[18px] tracking-[0] leading-[normal]">
+            AQF
+          </div>
+          <div className="flex flex-wrap w-[477px] items-center justify-center gap-[16px_16px] relative flex-[0_0_auto]">
+            <div className="relative w-fit mt-[-1.00px] font-body-regular font-[number:var(--body-regular-font-weight)] text-black text-[length:var(--body-regular-font-size)] tracking-[var(--body-regular-letter-spacing)] leading-[var(--body-regular-line-height)] [font-style:var(--body-regular-font-style)]">
+              Storyteller profile
+            </div>
+            <div className="relative w-fit mt-[-1.00px] font-body-regular font-[number:var(--body-regular-font-weight)] text-black text-[length:var(--body-regular-font-size)] tracking-[var(--body-regular-letter-spacing)] leading-[var(--body-regular-line-height)] [font-style:var(--body-regular-font-style)]">
+              Story library
+            </div>
+            <div className="relative w-fit mt-[-1.00px] font-body-regular font-[number:var(--body-regular-font-weight)] text-black text-[length:var(--body-regular-font-size)] tracking-[var(--body-regular-letter-spacing)] leading-[var(--body-regular-line-height)] [font-style:var(--body-regular-font-style)]">
+              Tell a story
+            </div>
+            <div className="relative w-fit font-body-regular font-[number:var(--body-regular-font-weight)] text-black text-[length:var(--body-regular-font-size)] tracking-[var(--body-regular-letter-spacing)] leading-[var(--body-regular-line-height)] [font-style:var(--body-regular-font-style)]">
+              Privacy Policy
+            </div>
+            <div className="relative w-fit font-body-llight font-[number:var(--body-llight-font-weight)] text-black text-[length:var(--body-llight-font-size)] tracking-[var(--body-llight-letter-spacing)] leading-[var(--body-llight-line-height)] [font-style:var(--body-llight-font-style)]">
+              Acknowledgements
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
