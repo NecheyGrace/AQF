@@ -45,7 +45,7 @@ function Final() {
           </div>
         </div>
 
-        <div className=" w-[45%] h- ">
+        <div className=" w-[45%] flex flex-col gap-3">
           <p className="font-bold text-2xl">
             You’ve just recorded your first story
           </p>
@@ -53,10 +53,11 @@ function Final() {
             We hope that you feel a little lighter and a little more in control
             of your challenge.
           </p>
+          <p className="font-medium text-base">{para}</p>
         </div>
       </div>
       <div className="bg-[#FFEDCC] w-full h-full flex items-end pt-16 p-8 flex-col">
-        <Link to="/current">
+        <Link to="/">
           <RetroRoundedCorner name={"Next"} />
         </Link>
       </div>
