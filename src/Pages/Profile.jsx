@@ -1,8 +1,12 @@
 import React from "react";
 import Icon from "./components/Icon";
 import MenuClose from "./components/MenuClose";
+import { useLocation } from "react-router-dom";
 
 function Profile() {
+  const location = useLocation();
+  const { name } = location.state || {};
+
   return (
     <div className="bg-[#FFEDCC] w-[1440px] h-[952px]">
       <div className="pt-8">
@@ -42,7 +46,7 @@ function Profile() {
         <div className="flex flex-col items-start gap-4">
           <div className="flex justify-between items-center w-[600px]">
             <div className="Pro'] text-black font-['Readex text-[1.375rem] leading-[normal]">
-              Name
+              {name}
             </div>
             <div className="flex justify-center items-center gap-2.5 Pro'] text-[#4d4d4d] font-['Readex text-lg font-light leading-[normal]">
               Jane Grul

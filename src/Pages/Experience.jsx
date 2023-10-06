@@ -1,32 +1,24 @@
 import { Link, useNavigate } from "react-router-dom";
-import Icon from "../Pages/components/Icon";
+import Icon from "./components/Icon";
 import RetroRoundedCorner from "./components/RetroRoundedCorner";
+import Hero from "../Pages/components/Hero";
 
 function Experience() {
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
-  };
   return (
-    <div className="h-[952px] font-sans bg-[#FFEDCC]">
-      <div onClick={goBack}>
-        <Icon />
-      </div>
-      <div className="flex justify-center items-center h-[952px]">
-        <div>
-          <h3 className="text-5xl font-bold  pb-5">
-            Now, let us dive into your experiences
-          </h3>
-          <p className="text-4xl font-medium">
-            We are will use your answers to provide curated guidance and <br />{" "}
-            thoughtful prompts to kickstart your experience{" "}
-          </p>
+    <div className="w-full bg-black h-[100vh] flex">
+      <Hero text={`Let’s dive into the experiences that matter to you`} />
+
+      <div className="flex flex-col justify-center pl-28  bg-[#FFEDCC] w-[64%] ml-[2px] rounded-tl-3xl rounded-bl-3xl">
+        <div className="flex justify-center items-center font-medium text-[28px] w-[60%]">
+          We’ll use the following answers to provide curated guidance and
+          thoughtful prompts to kickstart your storytelling.
         </div>
-      </div>
-      <div className="bg-[#FFEDCC] w-full flex items-end pr-8 pt-40 flex-col">
-        <Link to="/topic">
-          <RetroRoundedCorner name={"Next"} />
-        </Link>
+
+        <div className=" w-full flex items-end pr-8 flex-col ">
+          <Link to="/topic">
+            <RetroRoundedCorner name={"Next"} />
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import Card from "../../components/Card";
 import bookmark from "../../../assets/bookmark.png";
 import Rectangle from "../../components/Rectangle";
 import Hero from "../../components/Hero";
-import promps from "../../components/promps";
+import Promps from "../../components/Promps";
 
 // Define an array of data objects, one for each instance
 const promptsData = [
@@ -32,94 +32,7 @@ const promptsData = [
 ];
 
 function Prompt() {
-  const [selectedCard, setSelectedCard] = useState(null);
-
-  const handleCardClick = (cardId) => {
-    setSelectedCard(cardId);
-  };
-
-  const handleNextPageClick = () => {
-    if (selectedCard) {
-      // Perform navigation to the next page here
-      // You can use React Router, window.location.href, or any other navigation method
-    } else {
-      alert("Please select a card before proceeding.");
-    }
-  };
-
   return (
-    // <div className="bg-[#FFEDCC] w-full ">
-    //   <div className="pt-6" onClick={goBack}>
-    //     <Icon />
-    //   </div>
-    //   <div>
-    //     <div className="flex justify-end">
-    //       <MenuClose />
-    //     </div>
-    //   </div>
-    //   <div>
-    //     <Rectangle
-    //       text={"Kickstart your storytelling with a prompt"}
-    //       prompt={
-    //         "Prompts let you focus less on the tellng, and more on your story"
-    //       }
-    //     />
-    //   </div>
-    //   <div className="flex flex-wrap gap-4 pt-4 pl-[112px]">
-    //     {promptsData.map((data) => (
-    //       <div key={data.id} className="flex-shrink-0 w-[20rem] h-[400px]">
-    //         <div className="frame_193 relative flex-shrink-0 rounded-lg border-4 border-black bg-white">
-    //           <img src={bookmark} alt="" className="absolute" />
-    //           <div className="Pro text-black font-Readex text-lg font-light leading-normal pt-16">
-    //             {data.question}
-    //           </div>
-    //           <div className="flex flex-shrink-0 justify-center items-center w-12 h-12">
-    //             <div className="lightgray 50% / cover no-repeat flex-shrink-0 w-12 h-12 bg-[url(data.imagePath)]" />
-    //           </div>
-    //         </div>
-    //       </div>
-    //     ))}
-    //     <svg
-    //       width={57}
-    //       height={70}
-    //       viewBox="0 0 57 70"
-    //       fill="none"
-    //       xmlns="http://www.w3.org/2000/svg"
-    //     >
-    //       <path
-    //         d="M4 4L30.7574 30.7574C33.1005 33.1005 33.1005 36.8995 30.7574 39.2426L4 66"
-    //         stroke="black"
-    //         strokeWidth={8}
-    //         strokeLinecap="round"
-    //       />
-    //       <path
-    //         d="M24 4L50.7574 30.7574C53.1005 33.1005 53.1005 36.8995 50.7574 39.2426L24 66"
-    //         stroke="black"
-    //         strokeWidth={8}
-    //         strokeLinecap="round"
-    //       />
-    //     </svg>
-    //   </div>
-    //   <div className=" w-full flex items-end  p-8 flex-col">
-    //     {/* <Link to={`${selectedCard===1?"/c/s":"/c/ns"}`}> */}
-    //     <button
-    //       onClick={handleNextPageClick}
-    //       disabled={!selectedCard}
-    //       className={`status_default ${
-    //         selectedCard ? "bg-[#ff3c00]" : "bg-gray-400 cursor-not-allowed"
-    //       } inline-flex font-bold justify-center items-center  h-12 w-36 rounded-[0.625rem] border-2 border-black   text-black  font-['Inter'] text-md leading-[normal]`}
-    //     >
-    //       View Saved prompts
-    //     </button>
-    //     {/* </Link> */}
-    //   </div>
-    //   {/* <div className="relative  w-[373px] h-[456px]">
-    //     <div className="fixed w-[373px] h-[456px] top-0 left-0 bg-white rounded-[8px] border-4 border-solid border-black">
-    //       <img src={bookmark} alt="" className="absolute" />
-    //     </div>
-    //   </div> */}
-    // </div>
-
     <div className=" w-full bg-black h-[100vh] flex">
       <Hero
         text={"Kickstart your storytelling with a prompt"}
@@ -129,7 +42,7 @@ function Prompt() {
       />
 
       <div className="w-[65%] py-10 bg-[#FFEDCC] rounded-tl-3xl rounded-bl-3xl   ml-[2px]">
-        <promps />
+        <Promps />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import Lady from "../../assets/Lady.png";
 import { Link } from "react-router-dom";
 import White from "../components/White";
 import { useNavigate } from "react-router-dom";
-import closed from "../../assets/closed.png";
+
 import RetroRoundedCorner from "../components/RetroRoundedCorner";
 
 function Onboarding() {
@@ -46,9 +46,6 @@ fill: #484848;
           />
         </div>
         <div className="flex flex-col ml-1 flex-shrink-0 justify-center w-[55%]  rounded-tl-3xl rounded-bl-3xl bg-[#ffedcc]">
-          <div className="flex justify-end">
-            <img src={closed} alt="" />
-          </div>
           <div className="w-[630px] pt-[150.5px] flex flex-col items-center justify-center px-[50px]">
             <div className="self-stretch text-black font-['Readex text-[2.1rem] leading-[normal]">
               We know first-hand the challenge of finding the words to describe

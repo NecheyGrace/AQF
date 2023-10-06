@@ -1,6 +1,6 @@
 import bro from "../assets/bro.png";
 import { Link, useNavigate } from "react-router-dom";
-import White from "../Pages/components/White";
+import White from "./components/White";
 import RetroRoundedCorner from "./components/RetroRoundedCorner";
 
 function Role() {

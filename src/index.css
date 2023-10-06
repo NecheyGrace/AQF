@@ -5,7 +5,9 @@
 .status_default {
   box-shadow: 4px 4px 0px 0px #551400;
 }
-
+.shadow-custom:hover {
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2); /* Adjust the color and opacity as needed */
+}
 .button {
   flex: 1 0 0;
 }
@@ -103,6 +105,29 @@
 
 .button {
   flex: 1 0 0;
+}
+.selection_card {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.frame_257 {
+  gap: 143px;
+}
+
+.selection_card-1 {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.frame_257-1 {
+  gap: 143px;
+}
+
+.selection_card-2 {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.frame_257-2 {
+  gap: 143px;
 }
 /* .landing-page {
     background-color: #000000;

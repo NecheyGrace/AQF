@@ -1,19 +1,16 @@
-import Icon from "../../components/Icon";
-import MenuClose from "../../components/MenuClose";
 import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
-import Hero from "../../components/Hero";
-import RetroRoundedCorner from "../../components/RetroRoundedCorner";
-import "../../../index.css";
-import mad from "../../../assets/mad.png";
-import happy from "../../../assets/happy.png";
-import confused from "../../../assets/confused.png";
-import disgusted from "../../../assets/disgusted.png";
-import sad from "../../../assets/sad.png";
-import scared from "../../../assets/scared.png";
-import suprised from "../../../assets/suprised.png";
+import Hero from "./components/Hero";
+import "../index.css";
+import mad from "../assets/mad.png";
+import happy from "../assets/happy.png";
+import confused from "../assets/confused.png";
+import disgusted from "../assets/disgusted.png";
+import sad from "../assets/sad.png";
+import scared from "../assets/scared.png";
+import suprised from "../assets/suprised.png";
 
-function Feel() {
+function Pause() {
   const [selectedEmoji, setSelectedEmoji] = useState([]);
   const emojiData = [
     { id: 1, emoji: happy, mood: "happy" },
@@ -50,13 +47,15 @@ function Feel() {
       alert("Please select at least three emojis before proceeding.");
     }
   };
-
   return (
     <>
       <div className="bg-black">
         <div className="w-full h-[100vh] flex">
           <Hero
-            text={"How do you feel right now thinking about your challenge?"}
+            text={"Pause for a moment."}
+            word={
+              "How do you feel now that you’ve turned your struggle into a story?"
+            }
           />
 
           <div className="flex items-center w-[65%] bg-[#FFEDCC] ml-[2px] pl-[80px] pt-[122px] rounded-tl-3xl rounded-bl-3xl  flex-wrap gap-4 ">
@@ -76,7 +75,7 @@ function Feel() {
               </div>
             ))}
             <div className="w-full flex items-end p-8 flex-col">
-              <Link to="/currents">
+              <Link to="/final">
                 <button
                   onClick={handleNextPageClick}
                   disabled={selectedEmoji.length < 3}
@@ -97,4 +96,4 @@ function Feel() {
   );
 }
 
-export default Feel;
+export default Pause;

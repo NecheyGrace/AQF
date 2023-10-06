@@ -11,7 +11,7 @@ import "../../index.css";
 // };
 const RetroRoundedCorner = ({ name }) => (
   <button
-    className={` bg-[#8BC965] status_default flex flex-col font-bold justify-center items-center px-12 w-48  py-3 rounded-[0.625rem] border-2 border-black text-black text-base leading-[normal]`}
+    className={` hover:bg-[#8BC965] hover:border-2 hover:border-[#6FAA4E] active:bg-[#8BC965]  active:shadow-custom bg-[#8BC965] status_default flex flex-col font-bold justify-center items-center px-4 w-44  py-3 rounded-[0.625rem] border-2 border-black text-black text-base leading-[normal]`}
   >
     {name}
   </button>

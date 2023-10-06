@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Icon from "../Pages/components/Icon";
+import Icon from "./components/Icon";
 import RetroRoundedCorner from "./components/RetroRoundedCorner";
 
 function Area() {

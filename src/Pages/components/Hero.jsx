@@ -9,7 +9,7 @@ function Hero({ text, word }) {
   };
   return (
     <>
-      <div className=" w-[35%] bg-[#FFD1AA] rounded-r-3xl flex justify-center items-center">
+      <div className=" w-[36%] bg-[#FFD1AA] rounded-r-3xl flex justify-center items-center">
         <div className="pt-6" onClick={goBack}>
           <Icon />
         </div>
