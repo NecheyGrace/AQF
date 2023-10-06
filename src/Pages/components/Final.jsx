@@ -4,7 +4,7 @@ import White from "../components/White";
 import { Link, useNavigate } from "react-router-dom";
 import RetroRoundedCorner from "./RetroRoundedCorner";
 
-function Final() {
+function Final({ para }) {
   const navigate = useNavigate();
   const goBack = () => {
     navigate(-1);

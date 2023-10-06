@@ -14,7 +14,7 @@ function Card({ text, texts, word, words, climb, human, link1, link2 }) {
 
   return (
     <>
-      <div className="flex flex-col  h-[100vh] pl-[107px] space-y-4  ">
+      <div className="flex flex-col  min-h-screen pl-[107px] space-y-10 pt-8  ">
         <div
           className={` relative w-[350px] h-[250px] flex shadow-md shadow-black rounded-lg border-2 border-black   ${
             selectedCard === 1 ? "bg-[#8BC965]" : "bg-white"

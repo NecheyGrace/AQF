@@ -12,7 +12,7 @@ import Hero from "../components/Hero";
 Hero;
 function Current() {
   return (
-    <div className=" w-full bg-black h-[100vh] flex">
+    <div className=" w-full bg-black min-h-screen flex">
       <Hero text={"Where are you right now?"} />
 
       <div className="w-[65%] py-10 bg-[#FFEDCC] rounded-tl-3xl rounded-bl-3xl   ml-[2px]">

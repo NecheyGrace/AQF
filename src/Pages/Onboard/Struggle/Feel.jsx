@@ -37,11 +37,6 @@ function Feel() {
     }
   };
 
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
-  };
-
   const handleNextPageClick = () => {
     if (selectedEmoji.length >= 3) {
       // At least three emojis are selected, proceed to the next page.
